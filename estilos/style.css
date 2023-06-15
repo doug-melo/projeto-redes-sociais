@@ -25,8 +25,7 @@ main{
 }
 
 section#telefone {
-    background-color: blue;
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50% ,-50%);
@@ -51,5 +50,14 @@ section#redes img {
     width: 50px;
     margin: 10px;
     border-radius: 50px;
-    box-shadow: 2px 2px 10px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.616);
+    box-sizing: border-box ; /*faz com que a borda faça parte da caixa*/
 }
+
+section#redes img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.521);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
+    transition: transform .3s, border 1s ;
+}
+
